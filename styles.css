@@ -18,6 +18,8 @@
   --danger-level-3: #00cc66;
   --danger-level-2: #00cc99;
   --danger-level-1: #00ccff;
+
+  --gameover-color: #00000091;
 }
 
 *{
@@ -188,8 +190,11 @@ body{
   width: 100%;
   height: 100%;
   background-color: var(--secondary);
-
   border: 1px solid var(--primary);
+}
+
+#gameBoard .row .cell.game-over::after{
+  background-color: var(--gameover-color);
 }
 
 #gameBoard .row .cell.clicked::after{
